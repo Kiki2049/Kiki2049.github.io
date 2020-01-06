@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="code," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="另一份对着书敲的作业 大概就学了下requests 和 正则表达式顺便用了下多进程发现不适合爬取这一个东西tpt">
+<meta name="keywords" content="code">
+<meta property="og:type" content="article">
+<meta property="og:title" content="猫眼榜单top100">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2020&#x2F;01&#x2F;06&#x2F;%E7%8C%AB%E7%9C%BC%E6%A6%9C%E5%8D%95top100&#x2F;index.html">
+<meta property="og:site_name" content="Kiki的废物博客">
+<meta property="og:description" content="另一份对着书敲的作业 大概就学了下requests 和 正则表达式顺便用了下多进程发现不适合爬取这一个东西tpt">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-01-06T06:24:36.872Z">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/01/06/猫眼榜单top100/"/>
+
+
+
+
+
+  <title>猫眼榜单top100 | Kiki的废物博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Kiki的废物博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Kiki是个废物，毫无疑问<( ‵□′)───C＜─___-)||</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" target="_blank" rel="noopener" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/06/%E7%8C%AB%E7%9C%BC%E6%A6%9C%E5%8D%95top100/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kiki">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/0.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kiki的废物博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">猫眼榜单top100</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-06T14:16:45+08:00">
+                2020-01-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%88%AC%E8%99%AB/" itemprop="url" rel="index">
+                    <span itemprop="name">爬虫</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>另一份对着书敲的作业</p>
+<p>大概就学了下requests 和 正则表达式<br>顺便用了下多进程发现不适合爬取这一个东西tpt</p>
+<a id="more"></a>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">import json</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">from multiprocessing import Pool</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">import requests</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">from requests.exceptions import RequestException</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">import re</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">import time</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">def get_one_page(url):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    # 猫眼电影网站有反爬虫措施，设置headers后可以爬取</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">    headers &#x3D; &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">        &quot;User-Agent&quot;: &quot;Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;79.0.3945.79 Safari&#x2F;537.36&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">    try:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">        response &#x3D; requests.get(url, headers&#x3D;headers)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">        if response.status_code &#x3D;&#x3D; 200:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">            return response.text</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">        return None</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">    except RequestException:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">        return None</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">def parse_one_page(html):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">    # 生成正则表达式对象,()内部为目标结果，.*？非贪婪匹配</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">    # 注意起始符结束符就ok</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">    # 正则表达式一定要打对，不然巨凉凉</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">    pattern &#x3D; re.compile(&#39;&lt;dd&gt;.*?board-index.*?&gt;(\d+)&lt;&#x2F;i&gt;.*?data-src&#x3D;&quot;(.*?)&quot;.*?name&quot;&gt;&lt;a&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">                         + &#39;.*?&gt;(.*?)&lt;&#x2F;a&gt;.*?star&quot;&gt;(.*?)&lt;&#x2F;p&gt;.*?releasetime&quot;&gt;(.*?)&lt;&#x2F;p&gt;&#39;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">                         + &#39;.*?integer&quot;&gt;(.*?)&lt;&#x2F;i&gt;.*?fraction&quot;&gt;(.*?)&lt;&#x2F;i&gt;.*?&lt;&#x2F;dd&gt;&#39;, re.S)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line">    # re.S 使其可以匹配换行符</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">    items &#x3D; re.findall(pattern, html)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">    # 将list格式化为dict</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line">    for item in items:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">        yield &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">            &#39;index&#39;: item[0],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">            &#39;image&#39;: item[1],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line">            &#39;title&#39;: item[2],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line">            # strip 移除字符串头尾指定字符,默认为空格回车</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line">            &#39;actor&#39;: item[3].strip()[3:],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line">            &#39;time&#39;: item[4][5:],</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">43</span></pre></td><td class="code"><pre><span class="line">            &#39;sorce&#39;: item[5] + item[6]</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">44</span></pre></td><td class="code"><pre><span class="line">        &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">45</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">46</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">47</span></pre></td><td class="code"><pre><span class="line">def write_to_file(content):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">48</span></pre></td><td class="code"><pre><span class="line">    # 用json.dumps实现字典序列化</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">49</span></pre></td><td class="code"><pre><span class="line">    with open(&#39;猫眼top100.txt&#39;, &#39;a&#39;, encoding&#x3D;&#39;utf-8&#39;) as f:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">50</span></pre></td><td class="code"><pre><span class="line">        f.write(json.dumps(content, ensure_ascii&#x3D;False) + &#39;\n&#39;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">51</span></pre></td><td class="code"><pre><span class="line">        f.close()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">52</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">53</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">54</span></pre></td><td class="code"><pre><span class="line">def main(offset):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">55</span></pre></td><td class="code"><pre><span class="line">    url &#x3D; &#39;https:&#x2F;&#x2F;maoyan.com&#x2F;board&#x2F;4?offset&#x3D;&#39; + str(offset)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">56</span></pre></td><td class="code"><pre><span class="line">    html &#x3D; get_one_page(url)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">57</span></pre></td><td class="code"><pre><span class="line">    # print(html)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">58</span></pre></td><td class="code"><pre><span class="line">    for item in parse_one_page(html):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">59</span></pre></td><td class="code"><pre><span class="line">        print(item)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">60</span></pre></td><td class="code"><pre><span class="line">        write_to_file(item)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">61</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">62</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">63</span></pre></td><td class="code"><pre><span class="line">if __name__ &#x3D;&#x3D; &#39;__main__&#39;:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">64</span></pre></td><td class="code"><pre><span class="line">    for i in range(10):</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">65</span></pre></td><td class="code"><pre><span class="line">        main(i * 10)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">66</span></pre></td><td class="code"><pre><span class="line">        time.sleep(1)  # 防反爬虫</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">67</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">68</span></pre></td><td class="code"><pre><span class="line">    &quot;&quot;&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">69</span></pre></td><td class="code"><pre><span class="line">    # Pool 多进程</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">70</span></pre></td><td class="code"><pre><span class="line">    pool &#x3D; Pool()</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">71</span></pre></td><td class="code"><pre><span class="line">    pool.map(main, [i * 10 for i in range(10)])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">72</span></pre></td><td class="code"><pre><span class="line">    # 多个进程同时，导致排序有错误</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">73</span></pre></td><td class="code"><pre><span class="line">    &quot;&quot;&quot;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">74</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr></table></figure>
+
+
+<p>结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;1&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;ce4da3e03e655b5b88ed31b5cd7896cf62472.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;霸王别姬&quot;, &quot;actor&quot;: &quot;张国荣,张丰毅,巩俐&quot;, &quot;time&quot;: &quot;1993-07-26&quot;, &quot;sorce&quot;: &quot;9.5&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;2&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;283292171619cdfd5b240c8fd093f1eb255670.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;肖申克的救赎&quot;, &quot;actor&quot;: &quot;蒂姆·罗宾斯,摩根·弗里曼,鲍勃·冈顿&quot;, &quot;time&quot;: &quot;1994-09-10(加拿大)&quot;, &quot;sorce&quot;: &quot;9.5&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;3&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;289f98ceaa8a0ae737d3dc01cd05ab052213631.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;罗马假日&quot;, &quot;actor&quot;: &quot;格利高里·派克,奥黛丽·赫本,埃迪·艾伯特&quot;, &quot;time&quot;: &quot;1953-09-02(美国)&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;4&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;6bea9af4524dfbd0b668eaa7e187c3df767253.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;这个杀手不太冷&quot;, &quot;actor&quot;: &quot;让·雷诺,加里·奥德曼,娜塔莉·波特曼&quot;, &quot;time&quot;: &quot;1994-09-14(法国)&quot;, &quot;sorce&quot;: &quot;9.5&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;5&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;b607fba7513e7f15eab170aac1e1400d878112.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;泰坦尼克号&quot;, &quot;actor&quot;: &quot;莱昂纳多·迪卡普里奥,凯特·温丝莱特,比利·赞恩&quot;, &quot;time&quot;: &quot;1998-04-03&quot;, &quot;sorce&quot;: &quot;9.5&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;6&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;da64660f82b98cdc1b8a3804e69609e041108.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;唐伯虎点秋香&quot;, &quot;actor&quot;: &quot;周星驰,巩俐,郑佩佩&quot;, &quot;time&quot;: &quot;1993-07-01(中国香港)&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;7&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;223c3e186db3ab4ea3bb14508c709400427933.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;乱世佳人&quot;, &quot;actor&quot;: &quot;费雯·丽,克拉克·盖博,奥利维娅·德哈维兰&quot;, &quot;time&quot;: &quot;1939-12-15(美国)&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;8&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;58782fa5439c25d764713f711ebecd1e201941.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;魂断蓝桥&quot;, &quot;actor&quot;: &quot;费雯·丽,罗伯特·泰勒,露塞尔·沃特森&quot;, &quot;time&quot;: &quot;1940-05-17(美国)&quot;, &quot;sorce&quot;: &quot;9.2&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;9&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;b0d986a8bf89278afbb19f6abaef70f31206570.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;辛德勒的名单&quot;, &quot;actor&quot;: &quot;连姆·尼森,拉尔夫·费因斯,本·金斯利&quot;, &quot;time&quot;: &quot;1993-12-15(美国)&quot;, &quot;sorce&quot;: &quot;9.2&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;10&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;ba1ed511668402605ed369350ab779d6319397.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;天空之城&quot;, &quot;actor&quot;: &quot;寺田农,鹫尾真知子,龟山助清&quot;, &quot;time&quot;: &quot;1992-05-01&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;11&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;14a7b337e8063e3ce05a5993ed80176b74208.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;大闹天宫&quot;, &quot;actor&quot;: &quot;邱岳峰,毕克,富润生&quot;, &quot;time&quot;: &quot;1965-12-31&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;12&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;6bc004d57358ee6875faa5e9a1239140128550.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;音乐之声&quot;, &quot;actor&quot;: &quot;朱莉·安德鲁斯,克里斯托弗·普卢默,埃琳诺·帕克&quot;, &quot;time&quot;: &quot;1965-03-02(美国)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;13&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;7fb686d335bfa9c83e791ea2c0f87b4e61810.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;喜剧之王&quot;, &quot;actor&quot;: &quot;周星驰,莫文蔚,张柏芝&quot;, &quot;time&quot;: &quot;1999-02-13(中国香港)&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;14&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;ae7245920d95c03765fe1615f3a1fe3865785.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;春光乍泄&quot;, &quot;actor&quot;: &quot;张国荣,梁朝伟,张震&quot;, &quot;time&quot;: &quot;1997-05-30(中国香港)&quot;, &quot;sorce&quot;: &quot;9.2&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;15&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;6a964e9cee699267053bd6a4bf6f2671195394.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;剪刀手爱德华&quot;, &quot;actor&quot;: &quot;约翰尼·德普,薇诺娜·瑞德,黛安·韦斯特&quot;, &quot;time&quot;: &quot;1990-12-06(美国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;16&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;ad974d3527879f00be2eec29135118163728582.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;黑客帝国&quot;, &quot;actor&quot;: &quot;基努·里维斯,凯瑞-安·莫斯,劳伦斯·菲什伯恩&quot;, &quot;time&quot;: &quot;2000-01-14&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;17&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;d66b56b77b55aa3da5987b68948444c9106742.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;哈利·波特与魔法石&quot;, &quot;actor&quot;: &quot;丹尼尔·雷德克里夫,鲁伯特·格林特,艾玛·沃特森&quot;, &quot;time&quot;: &quot;2002-01-26&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;18&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;932bdfbef5be3543e6b136246aeb99b8123736.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;指环王3：王者无敌&quot;, &quot;actor&quot;: &quot;伊莱贾·伍德,伊恩·麦克莱恩,丽芙·泰勒&quot;, &quot;time&quot;: &quot;2004-03-15&quot;, &quot;sorce&quot;: &quot;9.2&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;19&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;b05b94b28eca53f325ae8d807fcd4ce01798036.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;加勒比海盗&quot;, &quot;actor&quot;: &quot;约翰尼·德普,凯拉·奈特莉,奥兰多·布鲁姆&quot;, &quot;time&quot;: &quot;2003-11-21&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;20&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;8959888ee0c399b0fe53a714bc8a5a17460048.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;楚门的世界&quot;, &quot;actor&quot;: &quot;金·凯瑞,劳拉·琳妮,诺亚·艾默里奇&quot;, &quot;time&quot;: &quot;1998-06-01(美国)&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;21&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;606de8f394d40dbcbb9b87943fec71a2130408.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;无间道&quot;, &quot;actor&quot;: &quot;刘德华,梁朝伟,黄秋生&quot;, &quot;time&quot;: &quot;2003-09-05&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;22&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;09658109acfea0e248a63932337d8e6a4268980.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;蝙蝠侠：黑暗骑士&quot;, &quot;actor&quot;: &quot;克里斯蒂安·贝尔,希斯·莱杰,阿伦·伊克哈特&quot;, &quot;time&quot;: &quot;2008-07-18(美国)&quot;, &quot;sorce&quot;: &quot;9.3&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;23&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;bb1dee5e0b25889a2410211c1d5010ae190824.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;教父2&quot;, &quot;actor&quot;: &quot;阿尔·帕西诺,罗伯特·德尼罗,黛安·基顿&quot;, &quot;time&quot;: &quot;1974-12-12(美国)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;24&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;86c5190ba1d1236093c13f2fe9ed8dd4150050.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;射雕英雄传之东成西就&quot;, &quot;actor&quot;: &quot;张国荣,梁朝伟,张学友&quot;, &quot;time&quot;: &quot;1993-02-05(中国香港)&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;25&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;dd08154878aac7c8c649fe3eeb8ccd0a2498277.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;指环王1：护戒使者&quot;, &quot;actor&quot;: &quot;伊莱贾·伍德,伊恩·麦克莱恩,丽芙·泰勒&quot;, &quot;time&quot;: &quot;2002-04-04&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;26&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;267dd2483f0fb57081474c00fbea38451415571.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;机器人总动员&quot;, &quot;actor&quot;: &quot;本·贝尔特,艾丽莎·奈特,杰夫·格尔林&quot;, &quot;time&quot;: &quot;2008-06-27(美国)&quot;, &quot;sorce&quot;: &quot;9.3&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;27&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;02bb9fd161c05bad6089133098efcdb5546589.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;指环王2：双塔奇兵&quot;, &quot;actor&quot;: &quot;伊莱贾·伍德,伊恩·麦克莱恩,丽芙·泰勒&quot;, &quot;time&quot;: &quot;2003-04-25&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;28&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;27b76fe6cf3903f3d74963f70786001e1438406.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;狮子王&quot;, &quot;actor&quot;: &quot;马修·布罗德里克,尼基塔·卡兰姆,詹姆斯·厄尔·琼斯&quot;, &quot;time&quot;: &quot;1995-07-15&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;29&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;76fc92cfa6c8f2959431b8aa604ef7ae126414.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;天堂电影院&quot;, &quot;actor&quot;: &quot;菲利浦·诺瓦雷,赛尔乔·卡斯特利托,蒂兹亚娜·罗达托&quot;, &quot;time&quot;: &quot;1988-11-17(意大利)&quot;, &quot;sorce&quot;: &quot;9.2&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;30&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;4c41068ef7608c1d4fbfbe6016e589f7204391.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;活着&quot;, &quot;actor&quot;: &quot;葛优,巩俐,牛犇&quot;, &quot;time&quot;: &quot;1994-05-18(法国)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;31&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;a2a287c77415dc1f85b04d288f7d63ab1089754.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;拯救大兵瑞恩&quot;, &quot;actor&quot;: &quot;汤姆·汉克斯,马特·达蒙,汤姆·塞兹摩尔&quot;, &quot;time&quot;: &quot;1998-11-13&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;32&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;0127b451d5b8f0679c6f81c8ed414bb2432442.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;哈尔的移动城堡&quot;, &quot;actor&quot;: &quot;倍赏千惠子,木村拓哉,美轮明宏&quot;, &quot;time&quot;: &quot;2004-11-20(日本)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;33&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;d40efe1183f29d5900f5c60be3c8a89d339225.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;盗梦空间&quot;, &quot;actor&quot;: &quot;莱昂纳多·迪卡普里奥,渡边谦,约瑟夫·高登-莱维特&quot;, &quot;time&quot;: &quot;2010-09-01&quot;, &quot;sorce&quot;: &quot;9.2&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;34&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;5f0a709378d6b567807aa9685610f818282136.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;忠犬八公的故事&quot;, &quot;actor&quot;: &quot;Forest,理查·基尔,琼·艾伦&quot;, &quot;time&quot;: &quot;2010-03-12(英国)&quot;, &quot;sorce&quot;: &quot;9.3&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;35&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;e540384dc6c9f63bdb27cc554588a77f44305.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;阿凡达&quot;, &quot;actor&quot;: &quot;萨姆·沃辛顿,佐伊·索尔达娜,米歇尔·罗德里格兹&quot;, &quot;time&quot;: &quot;2010-01-04&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;36&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;bc022b86345c643ca21d759166f77a553679589.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;疯狂原始人&quot;, &quot;actor&quot;: &quot;尼古拉斯·凯奇,艾玛·斯通,瑞安·雷诺兹&quot;, &quot;time&quot;: &quot;2013-04-20&quot;, &quot;sorce&quot;: &quot;9.5&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;37&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;b3defc07dfaa1b6f5b74852ce38a3f8f242792.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;搏击俱乐部&quot;, &quot;actor&quot;: &quot;爱德华·哈里森·诺顿,布拉德·皮特,海伦娜·伯翰·卡特&quot;, &quot;time&quot;: &quot;1999-10-15(美国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;38&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;a08f65e6cb50fab32df5da69ff116f593095363.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;幽灵公主&quot;, &quot;actor&quot;: &quot;松田洋治,石田百合子,田中裕子&quot;, &quot;time&quot;: &quot;1998-05-01&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;39&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;4f9638ba234c3fb673f23a09968db875371576.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;风之谷&quot;, &quot;actor&quot;: &quot;岛本须美,永井一郎,坂本千夏&quot;, &quot;time&quot;: &quot;1992&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;40&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;df15efd261060d3094a73ef679888d4f238149.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;十二怒汉&quot;, &quot;actor&quot;: &quot;亨利·方达,李·科布,马丁·鲍尔萨姆&quot;, &quot;time&quot;: &quot;1957-04-13(美国)&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;41&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;396266d8b711958841b3536a3fa7b868211445.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;大话西游之月光宝盒&quot;, &quot;actor&quot;: &quot;周星驰,莫文蔚,吴孟达&quot;, &quot;time&quot;: &quot;2014-10-24&quot;, &quot;sorce&quot;: &quot;9.6&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">43</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;42&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;70de97ebb6b5251ecb7c3f6d7a782a7f189340.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;放牛班的春天&quot;, &quot;actor&quot;: &quot;热拉尔·朱尼奥,让-巴蒂斯特·莫尼耶,玛丽·布奈尔&quot;, &quot;time&quot;: &quot;2004-10-16&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">44</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;43&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;06ec3c1c647942b1e40bca84036014e9490863.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;V字仇杀队&quot;, &quot;actor&quot;: &quot;娜塔莉·波特曼,雨果·维文,斯蒂芬·瑞&quot;, &quot;time&quot;: &quot;2006-03-17(美国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">45</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;44&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;ca4a128a5a54d5b5e35ceba622636c831810197.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;三傻大闹宝莱坞&quot;, &quot;actor&quot;: &quot;阿米尔·汗,黄渤,卡琳娜·卡普&quot;, &quot;time&quot;: &quot;2011-12-08&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">46</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;45&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;7d1d85610651dbe1c8687781a87d1008184950.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;当幸福来敲门&quot;, &quot;actor&quot;: &quot;威尔·史密斯,贾登·史密斯,坦迪·牛顿&quot;, &quot;time&quot;: &quot;2008-01-17&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">47</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;46&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;8d7b0b902afd4ec1a3dd7a9c6149463c187734.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;闻香识女人&quot;, &quot;actor&quot;: &quot;阿尔·帕西诺,克里斯·奥唐纳,加布里埃尔·安瓦尔&quot;, &quot;time&quot;: &quot;1992-12-23(美国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">48</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;47&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;845ce32778a1b3f258de089f91a3979b5766154.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;速度与激情5&quot;, &quot;actor&quot;: &quot;范·迪塞尔,保罗·沃克,道恩·强森&quot;, &quot;time&quot;: &quot;2011-05-12&quot;, &quot;sorce&quot;: &quot;9.2&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">49</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;48&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;b0d97e4158b47d653d7a81d66f7dd3092146907.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;驯龙高手&quot;, &quot;actor&quot;: &quot;杰伊·巴鲁切尔,杰拉德·巴特勒,亚美莉卡·费雷拉&quot;, &quot;time&quot;: &quot;2010-05-14&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">50</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;49&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;f8e9d5a90224746d15dfdbd53d4fae3d209420.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;勇敢的心&quot;, &quot;actor&quot;: &quot;梅尔·吉布森,苏菲·玛索,帕特里克·麦高汉&quot;, &quot;time&quot;: &quot;1995-05-24(美国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">51</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;50&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;34998e31c6d07475f1add6b8b16fd21d192579.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;少年派的奇幻漂流&quot;, &quot;actor&quot;: &quot;苏拉·沙玛,伊尔凡·可汗,塔布&quot;, &quot;time&quot;: &quot;2012-11-22&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">52</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;51&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;21b9211eb1094af360842472018db634286646.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;末代皇帝&quot;, &quot;actor&quot;: &quot;尊龙,陈冲,彼得·奥图尔&quot;, &quot;time&quot;: &quot;1987-10-23&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">53</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;52&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;85c2bfba6025bfbfb53291ae5924c215308805.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;神偷奶爸&quot;, &quot;actor&quot;: &quot;史蒂夫·卡瑞尔,杰森·席格尔,拉塞尔·布兰德&quot;, &quot;time&quot;: &quot;2010-07-09(美国)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">54</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;53&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;2e383b5f5f306f10f9f26d9f1c28cf1d825537.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;黑客帝国3：矩阵革命&quot;, &quot;actor&quot;: &quot;基努·里维斯,雨果·维文,凯瑞-安·莫斯&quot;, &quot;time&quot;: &quot;2003-11-05&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">55</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;54&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;f9356a376358f1576da3263d998eca7a94624.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;飞屋环游记&quot;, &quot;actor&quot;: &quot;爱德华·阿斯纳,乔丹·长井,鲍勃·彼德森&quot;, &quot;time&quot;: &quot;2009-08-04&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">56</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;55&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;e71affe126eeb4f8bfcc738cbddeebc8288766.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;断背山&quot;, &quot;actor&quot;: &quot;希斯·莱杰,杰克·吉伦哈尔,米歇尔·威廉姆斯&quot;, &quot;time&quot;: &quot;2006-01-13(美国)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">57</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;56&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;15f1ac49b6d1ff7b71207672993ed6901536456.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;怦然心动&quot;, &quot;actor&quot;: &quot;玛德琳·卡罗尔,卡兰·麦克奥利菲,艾丹·奎因&quot;, &quot;time&quot;: &quot;2010-08-06(美国)&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">58</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;57&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;70a574550c4bb928dcc6a40641294785150838.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;无敌破坏王&quot;, &quot;actor&quot;: &quot;约翰·C·赖利,萨拉·西尔弗曼,简·林奇&quot;, &quot;time&quot;: &quot;2012-11-06&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">59</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;58&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;75c0d3eb584be030a01f2e26741a8f41251454.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;致命魔术&quot;, &quot;actor&quot;: &quot;休·杰克曼,克里斯蒂安·贝尔,迈克尔·凯恩&quot;, &quot;time&quot;: &quot;2006-10-20(美国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">60</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;59&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;34f9202c5e823f490ffec4c69d5d0028137395.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;鬼子来了&quot;, &quot;actor&quot;: &quot;姜文,姜宏波,陈强&quot;, &quot;time&quot;: &quot;2000-05-12(法国戛纳)&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">61</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;60&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;7b7d1f8aa36d7a15463ce6942708a1a7265296.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;美丽心灵&quot;, &quot;actor&quot;: &quot;罗素·克洛,詹妮弗·康纳利,艾德·哈里斯&quot;, &quot;time&quot;: &quot;2001-12-21(美国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">62</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;61&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;f7f4b4099773268f8290ed033f49dc01377512.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;蝙蝠侠：黑暗骑士崛起&quot;, &quot;actor&quot;: &quot;克里斯蒂安·贝尔,迈克尔·凯恩,加里·奥德曼&quot;, &quot;time&quot;: &quot;2012-08-27&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">63</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;62&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;bb0eca029cd25329776a4549b3fbe262924727.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;哈利·波特与死亡圣器（下）&quot;, &quot;actor&quot;: &quot;丹尼尔·雷德克里夫,鲁伯特·格林特,艾玛·沃特森&quot;, &quot;time&quot;: &quot;2011-08-04&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">64</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;63&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;96d98200d2afb4b87ff189f9c15b6545568339.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;倩女幽魂&quot;, &quot;actor&quot;: &quot;张国荣,王祖贤,午马&quot;, &quot;time&quot;: &quot;2011-04-30&quot;, &quot;sorce&quot;: &quot;9.2&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">65</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;64&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;7ec873ba943f13e3c63789d899bd0e23256871.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;夜访吸血鬼&quot;, &quot;actor&quot;: &quot;汤姆·克鲁斯,布拉德·皮特,克尔斯滕·邓斯特&quot;, &quot;time&quot;: &quot;1994-11-11(美国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">66</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;65&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;2526f77c650bf7cf3d5ee2dccdeac332244951.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;本杰明·巴顿奇事&quot;, &quot;actor&quot;: &quot;布拉德·皮特,凯特·布兰切特,塔拉吉·P·汉森&quot;, &quot;time&quot;: &quot;2008-12-25(美国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">67</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;66&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;bcbe59fc51580317adf94537a61a1a26142090.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;钢琴家&quot;, &quot;actor&quot;: &quot;艾德里安·布洛迪,艾米莉娅·福克斯,米哈乌·热布罗夫斯基&quot;, &quot;time&quot;: &quot;2002-09-25(法国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">68</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;67&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;1e700e53e4fe29dd5942381bb353c8532239179.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;触不可及&quot;, &quot;actor&quot;: &quot;弗朗索瓦·克鲁塞,奥玛·希,安娜·勒尼&quot;, &quot;time&quot;: &quot;2011-11-02(法国)&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">69</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;68&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;0b0d45b58946078dd24d4945dd6be3b51329411.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;甜蜜蜜&quot;, &quot;actor&quot;: &quot;黎明,张曼玉,曾志伟&quot;, &quot;time&quot;: &quot;2015-02-13&quot;, &quot;sorce&quot;: &quot;9.2&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">70</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;69&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;moviemachine&#x2F;508056769092059fe43a611b949f27d14863831.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;大话西游之大圣娶亲&quot;, &quot;actor&quot;: &quot;周星驰,朱茵,莫文蔚&quot;, &quot;time&quot;: &quot;2014-10-24&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">71</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;70&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;7ed07b8ea8c0e0d0c7b685d20e3ec64e232004.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;初恋这件小事&quot;, &quot;actor&quot;: &quot;马里奥·毛瑞尔,平采娜·乐维瑟派布恩,阿查拉那·阿瑞亚卫考&quot;, &quot;time&quot;: &quot;2012-06-05&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">72</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;71&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;2a0783b4fd95566568f24adfad2181bb5392280.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;熔炉&quot;, &quot;actor&quot;: &quot;孔刘,郑有美,金智英&quot;, &quot;time&quot;: &quot;2011-09-22(韩国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">73</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;72&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;7833126c8c21a11571bb52fbdece0acb811449.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;新龙门客栈&quot;, &quot;actor&quot;: &quot;张曼玉,梁家辉,甄子丹&quot;, &quot;time&quot;: &quot;2012-02-24&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">74</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;73&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;19653e8af59cf473cd40f9ccc0658d93692304.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;素媛&quot;, &quot;actor&quot;: &quot;李来,薛耿求,严志媛&quot;, &quot;time&quot;: &quot;2013-10-02(韩国)&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">75</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;74&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;135c612860fae899df2220149664d97a173555.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;小鞋子&quot;, &quot;actor&quot;: &quot;默罕默德·阿米尔·纳吉,Kamal Mirkarimi,Behzad Rafi&quot;, &quot;time&quot;: &quot;1999-01-22(美国)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">76</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;75&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;5420be40e3b755ffe04779b9b199e935256906.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;萤火之森&quot;, &quot;actor&quot;: &quot;内山昂辉,佐仓绫音,后藤弘树&quot;, &quot;time&quot;: &quot;2011-09-17(日本)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">77</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;76&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;1199dc6273680f175fd9b06c9c36d08a219658.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;教父&quot;, &quot;actor&quot;: &quot;马龙·白兰度,阿尔·帕西诺,詹姆斯·肯恩&quot;, &quot;time&quot;: &quot;2015-04-18&quot;, &quot;sorce&quot;: &quot;9.3&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">78</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;77&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;d5970e36c8868a4b746c80f3b3f8a404174615.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;穿条纹睡衣的男孩&quot;, &quot;actor&quot;: &quot;阿沙·巴特菲尔德,维拉·法梅加,大卫·休里斯&quot;, &quot;time&quot;: &quot;2008-09-12(英国)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">79</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;78&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;6d8491386d07cda91967a6fbbd0d0788294693.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;时空恋旅人&quot;, &quot;actor&quot;: &quot;瑞秋·麦克亚当斯,多姆纳尔·格里森,比尔·奈伊&quot;, &quot;time&quot;: &quot;2013-09-04(英国)&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">80</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;79&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;3985eaf3858bea0f2a3d966bf7ee2103178217.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;窃听风暴&quot;, &quot;actor&quot;: &quot;乌尔里希·穆埃,塞巴斯蒂安·科赫,马蒂娜·格德克&quot;, &quot;time&quot;: &quot;2006-03-23(德国)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">81</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;80&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;6a6e74b2c289f9fa4433dd2dc04a7741331638.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;7号房的礼物&quot;, &quot;actor&quot;: &quot;柳承龙,郑镇荣,朴信惠&quot;, &quot;time&quot;: &quot;2013-01-23(韩国)&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">82</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;81&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;f9b87f683c090cfadb140a3972ba3660228739.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;恐怖直播&quot;, &quot;actor&quot;: &quot;河正宇,李璟荣,李大为&quot;, &quot;time&quot;: &quot;2013-07-31(韩国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">83</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;82&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;3e5f5f3aa4b7e5576521e26c2c7c894d253975.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;英雄本色&quot;, &quot;actor&quot;: &quot;狄龙,张国荣,周润发&quot;, &quot;time&quot;: &quot;2017-11-17&quot;, &quot;sorce&quot;: &quot;9.2&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">84</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;83&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;eb2ea56996f21e7fb47b1a0736c7f177258901.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;海豚湾&quot;, &quot;actor&quot;: &quot;里克·奥巴瑞,路易·西霍尤斯,哈迪·琼斯&quot;, &quot;time&quot;: &quot;2009-07-31(美国)&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">85</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;84&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;2d42e00d7ee59ff5bd574f93b8558aa726665.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;忠犬八公物语&quot;, &quot;actor&quot;: &quot;仲代达矢,春川真澄,井川比佐志&quot;, &quot;time&quot;: &quot;1987-08-01(日本)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">86</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;85&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;8fabf3894b7d12d3d2f6e66404813670265761.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;辩护人&quot;, &quot;actor&quot;: &quot;宋康昊,郭度沅,吴达洙&quot;, &quot;time&quot;: &quot;2013-12-18(韩国)&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">87</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;86&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;b553d13f30100db731ab6cf45668e52d94703.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;上帝之城&quot;, &quot;actor&quot;: &quot;亚历桑德雷·罗德里格斯,艾莉丝·布拉加,莱安德鲁·菲尔米诺&quot;, &quot;time&quot;: &quot;2002-08-30(巴西)&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">88</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;87&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;92198a6fc8c3f5d13aa1bdf203572c0f99438.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;美国往事&quot;, &quot;actor&quot;: &quot;罗伯特·德尼罗,詹姆斯·伍兹,伊丽莎白·麦戈文&quot;, &quot;time&quot;: &quot;2015-04-23&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">89</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;88&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;30310858fdab34c7a17cfd7ec8ad8bfc112201.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;完美的世界&quot;, &quot;actor&quot;: &quot;凯文·科斯特纳,克林特·伊斯特伍德,T·J·劳瑟&quot;, &quot;time&quot;: &quot;1993-11-24(美国)&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">90</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;89&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;4ffca83fd972f71e291f8ea8d78a4b58594878.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;七武士&quot;, &quot;actor&quot;: &quot;三船敏郎,志村乔,千秋实&quot;, &quot;time&quot;: &quot;1954-04-26(日本)&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">91</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;90&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;6cb23356f9d8e0b506349561c633310d102189.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;一一&quot;, &quot;actor&quot;: &quot;吴念真,金燕玲,李凯莉&quot;, &quot;time&quot;: &quot;2000-09-20(法国)&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">92</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;91&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;c304c687e287c7c2f9e22cf78257872d277201.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;龙猫&quot;, &quot;actor&quot;: &quot;秦岚,糸井重里,岛本须美&quot;, &quot;time&quot;: &quot;2018-12-14&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">93</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;92&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;85215b28d568ea8e2c97766edd95f890210522.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;阿飞正传&quot;, &quot;actor&quot;: &quot;张国荣,张曼玉,刘德华&quot;, &quot;time&quot;: &quot;2018-06-25&quot;, &quot;sorce&quot;: &quot;8.8&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">94</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;93&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;de1142a5dceb901eb939eb0bcfc2f88470909.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;爱·回家&quot;, &quot;actor&quot;: &quot;俞承豪,金艺芬,童孝熙&quot;, &quot;time&quot;: &quot;2002-04-05(韩国)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">95</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;94&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;a19a7f64a10e133b68de87d2f3bc46f3111417.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;海洋&quot;, &quot;actor&quot;: &quot;雅克·贝汉,姜文,兰斯洛特·佩林&quot;, &quot;time&quot;: &quot;2011-08-12&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">96</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;95&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;ed50b58bf636d207c56989872a91f4cf305138.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;我爱你&quot;, &quot;actor&quot;: &quot;宋在浩,李顺才,尹秀晶&quot;, &quot;time&quot;: &quot;2011-02-17(韩国)&quot;, &quot;sorce&quot;: &quot;9.0&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">97</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;96&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;cd18ed2c5cda9e71e17e5e6ef61ced172912303.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;黄金三镖客&quot;, &quot;actor&quot;: &quot;克林特·伊斯特伍德,李·范·克里夫,埃里·瓦拉赫&quot;, &quot;time&quot;: &quot;1966-12-23(意大利)&quot;, &quot;sorce&quot;: &quot;8.9&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">98</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;97&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;a1634f4e49c8517ae0a3e4adcac6b0dc43994.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;迁徙的鸟&quot;, &quot;actor&quot;: &quot;雅克·贝汉,Philippe Labro&quot;, &quot;time&quot;: &quot;2001-12-12(法国)&quot;, &quot;sorce&quot;: &quot;9.1&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">99</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;98&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p1.meituan.net&#x2F;movie&#x2F;580d81a2c78bf204f45323ddb4244b6c6821175.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;美丽人生&quot;, &quot;actor&quot;: &quot;罗伯托·贝尼尼,尼可莱塔·布拉斯基,乔治·坎塔里尼&quot;, &quot;time&quot;: &quot;2020-01-03&quot;, &quot;sorce&quot;: &quot;9.4&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">100</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;99&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;30b20139e68c46d02e0893277d633b701292458.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;千与千寻&quot;, &quot;actor&quot;: &quot;柊瑠美,周冬雨,入野自由&quot;, &quot;time&quot;: &quot;2019-06-21&quot;, &quot;sorce&quot;: &quot;9.3&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">101</span></pre></td><td class="code"><pre><span class="line">&#123;&quot;index&quot;: &quot;100&quot;, &quot;image&quot;: &quot;https:&#x2F;&#x2F;p0.meituan.net&#x2F;movie&#x2F;609e45bd40346eb8b927381be8fb27a61760914.jpg@160w_220h_1e_1c&quot;, &quot;title&quot;: &quot;海上钢琴师&quot;, &quot;actor&quot;: &quot;蒂姆·罗斯,比尔·努恩,克兰伦斯·威廉姆斯三世&quot;, &quot;time&quot;: &quot;2019-11-15&quot;, &quot;sorce&quot;: &quot;9.3&quot;&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">102</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr></table></figure>
+
+<p>发现挺多都没看过，看起来可以看了 ：：</p>
+
+      
+    </div>
+    
+    
+    
+
+    <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------水沝淼㵘<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+  
+</div>
+
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/code/" rel="tag"><i class="fa fa-tag"></i> code</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/01/06/%E4%BA%A4%E9%80%9A%E8%BF%90%E8%BE%93%E9%83%A8%E6%95%B0%E6%8D%AE%E7%88%AC%E5%8F%96/" rel="next" title="交通运输部数据爬取">
+                <i class="fa fa-chevron-left"></i> 交通运输部数据爬取
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/0.jpg"
+                alt="Kiki" />
+            
+              <p class="site-author-name" itemprop="name">Kiki</p>
+              <p class="site-description motion-element" itemprop="description">水就完事了</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kiki</span>
+
+  
+</div>
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
