@@ -10,7 +10,7 @@ redirect_from:
 About Me
 ------
 
-🎓 I am a master student in [School of Computer Science and Technology]([https://cs.fudan.edu.cn/]), [Fudan University]([https://www.fudan.edu.cn/en/]) mentored by Prof. [Bihuan Chen]([https://chenbihuan.github.io/]). I received my bachelor degree in software engineering from [Xidian University]([https://en.xidian.edu.cn/]) in 2023.
+🎓 I am a master student in [School of Computer Science and Technology](https://cs.fudan.edu.cn/), [Fudan University](https://www.fudan.edu.cn/en/) mentored by Prof. [Bihuan Chen](https://chenbihuan.github.io/). I received my bachelor degree in software engineering from [Xidian University](https://en.xidian.edu.cn/) in 2023.
 
 
 🌱 I currently major in software engineering and my research interests AI systems engineering, automatic driving system and simulation testing.
